@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3D Beat Logo</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background: #0f0f0f;
+      color: white;
+      overflow: hidden;
+      height: 100vh;
+    }
+
+    /* Hero Section containing the 3D scene */
+    .hero-section {
+      position: relative;
+      width: 100%;
+      height: 100vh; /* Full screen */
+      overflow: hidden;
+    }
+
+    .hero-section iframe {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: none;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+
+    .overlay {
+      position: absolute;
+      bottom: 1%; 
+      width: 100%;
+      text-align: center;
+      color: rgb(8, 0, 255);
+      z-index: 2;
+      padding: 2rem;
+      background: rgba(0, 0, 0, 0.5); 
+      backdrop-filter: blur(5px); 
+    }
+
+    .overlay h1 {
+      font-size: 3rem;
+      letter-spacing: 1px;
+      margin-bottom: 0.5em;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    }
+
+    .overlay p {
+      font-size: 1.2rem;
+      color: #15ff00; 
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+    }
+
+  </style>
+</head>
+<body>
+
+  <!--Spline 3D -->
+  <section class="hero-section">
+    <iframe
+      src="https://my.spline.design/component3diconscopy-xkx9ot0zSRH5caCuHAmozPPQ/"
+      frameborder="0"
+      loading="lazy"
+      allowfullscreen>
+    </iframe>
+    <div class="overlay">
+      <h1>My Interactive 3D Beat Logo</h1>
+      <p>Scroll with cursor, rub fingers, move with left click and enjoy the animation <br>
+    <p>Made with 😮 by Adarsh</p>
+    </div>
+  </section>
+
+</body>
+</html>
